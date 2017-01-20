@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444D42C91E3222FF00297C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42C81E3222FF00297C99 /* AppDelegate.swift */; };
+		444D42CB1E3222FF00297C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42CA1E3222FF00297C99 /* ViewController.swift */; };
+		444D42CE1E3222FF00297C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D42CC1E3222FF00297C99 /* Main.storyboard */; };
+		444D42D01E32230000297C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444D42CF1E32230000297C99 /* Assets.xcassets */; };
+		444D42D31E32230000297C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D42D11E32230000297C99 /* LaunchScreen.storyboard */; };
+		444D42DE1E32230000297C99 /* NewsReaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42DD1E32230000297C99 /* NewsReaderAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		444D42DA1E32230000297C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 444D42BD1E3222FF00297C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 444D42C41E3222FF00297C99;
+			remoteInfo = NewsReaderApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		444D42C51E3222FF00297C99 /* NewsReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		444D42C81E3222FF00297C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		444D42CA1E3222FF00297C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		444D42CD1E3222FF00297C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		444D42CF1E32230000297C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		444D42D21E32230000297C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		444D42D41E32230000297C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444D42D91E32230000297C99 /* NewsReaderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		444D42DD1E32230000297C99 /* NewsReaderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderAppTests.swift; sourceTree = "<group>"; };
+		444D42DF1E32230000297C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		444D42C21E3222FF00297C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444D42D61E32230000297C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444D42BC1E3222FF00297C99 = {
+			isa = PBXGroup;
+			children = (
+				444D42C71E3222FF00297C99 /* NewsReaderApp */,
+				444D42DC1E32230000297C99 /* NewsReaderAppTests */,
+				444D42C61E3222FF00297C99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		444D42C61E3222FF00297C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				444D42C51E3222FF00297C99 /* NewsReaderApp.app */,
+				444D42D91E32230000297C99 /* NewsReaderAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		444D42C71E3222FF00297C99 /* NewsReaderApp */ = {
+			isa = PBXGroup;
+			children = (
+				444D42C81E3222FF00297C99 /* AppDelegate.swift */,
+				444D42CA1E3222FF00297C99 /* ViewController.swift */,
+				444D42CC1E3222FF00297C99 /* Main.storyboard */,
+				444D42CF1E32230000297C99 /* Assets.xcassets */,
+				444D42D11E32230000297C99 /* LaunchScreen.storyboard */,
+				444D42D41E32230000297C99 /* Info.plist */,
+			);
+			path = NewsReaderApp;
+			sourceTree = "<group>";
+		};
+		444D42DC1E32230000297C99 /* NewsReaderAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				444D42DD1E32230000297C99 /* NewsReaderAppTests.swift */,
+				444D42DF1E32230000297C99 /* Info.plist */,
+			);
+			path = NewsReaderAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		444D42C41E3222FF00297C99 /* NewsReaderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444D42E21E32230000297C99 /* Build configuration list for PBXNativeTarget "NewsReaderApp" */;
+			buildPhases = (
+				444D42C11E3222FF00297C99 /* Sources */,
+				444D42C21E3222FF00297C99 /* Frameworks */,
+				444D42C31E3222FF00297C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsReaderApp;
+			productName = NewsReaderApp;
+			productReference = 444D42C51E3222FF00297C99 /* NewsReaderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		444D42D81E32230000297C99 /* NewsReaderAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444D42E51E32230000297C99 /* Build configuration list for PBXNativeTarget "NewsReaderAppTests" */;
+			buildPhases = (
+				444D42D51E32230000297C99 /* Sources */,
+				444D42D61E32230000297C99 /* Frameworks */,
+				444D42D71E32230000297C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				444D42DB1E32230000297C99 /* PBXTargetDependency */,
+			);
+			name = NewsReaderAppTests;
+			productName = NewsReaderAppTests;
+			productReference = 444D42D91E32230000297C99 /* NewsReaderAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		444D42BD1E3222FF00297C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Cristina Radulescu";
+				TargetAttributes = {
+					444D42C41E3222FF00297C99 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LE49W5GLAX;
+						ProvisioningStyle = Automatic;
+					};
+					444D42D81E32230000297C99 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LE49W5GLAX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 444D42C41E3222FF00297C99;
+					};
+				};
+			};
+			buildConfigurationList = 444D42C01E3222FF00297C99 /* Build configuration list for PBXProject "NewsReaderApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 444D42BC1E3222FF00297C99;
+			productRefGroup = 444D42C61E3222FF00297C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				444D42C41E3222FF00297C99 /* NewsReaderApp */,
+				444D42D81E32230000297C99 /* NewsReaderAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		444D42C31E3222FF00297C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444D42D31E32230000297C99 /* LaunchScreen.storyboard in Resources */,
+				444D42D01E32230000297C99 /* Assets.xcassets in Resources */,
+				444D42CE1E3222FF00297C99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444D42D71E32230000297C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		444D42C11E3222FF00297C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444D42CB1E3222FF00297C99 /* ViewController.swift in Sources */,
+				444D42C91E3222FF00297C99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444D42D51E32230000297C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444D42DE1E32230000297C99 /* NewsReaderAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		444D42DB1E32230000297C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 444D42C41E3222FF00297C99 /* NewsReaderApp */;
+			targetProxy = 444D42DA1E32230000297C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		444D42CC1E3222FF00297C99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				444D42CD1E3222FF00297C99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		444D42D11E32230000297C99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				444D42D21E32230000297C99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		444D42E01E32230000297C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		444D42E11E32230000297C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		444D42E31E32230000297C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LE49W5GLAX;
+				INFOPLIST_FILE = NewsReaderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosTemplates.NewsReaderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		444D42E41E32230000297C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LE49W5GLAX;
+				INFOPLIST_FILE = NewsReaderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosTemplates.NewsReaderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		444D42E61E32230000297C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LE49W5GLAX;
+				INFOPLIST_FILE = NewsReaderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosTemplates.NewsReaderAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsReaderApp.app/NewsReaderApp";
+			};
+			name = Debug;
+		};
+		444D42E71E32230000297C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LE49W5GLAX;
+				INFOPLIST_FILE = NewsReaderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosTemplates.NewsReaderAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsReaderApp.app/NewsReaderApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		444D42C01E3222FF00297C99 /* Build configuration list for PBXProject "NewsReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444D42E01E32230000297C99 /* Debug */,
+				444D42E11E32230000297C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		444D42E21E32230000297C99 /* Build configuration list for PBXNativeTarget "NewsReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444D42E31E32230000297C99 /* Debug */,
+				444D42E41E32230000297C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		444D42E51E32230000297C99 /* Build configuration list for PBXNativeTarget "NewsReaderAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444D42E61E32230000297C99 /* Debug */,
+				444D42E71E32230000297C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 444D42BD1E3222FF00297C99 /* Project object */;
+}
