@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYh-yy-DC4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -11,13 +11,13 @@
         <!--Detailed View Controller-->
         <scene sceneID="C4n-fM-qw8">
             <objects>
-                <viewController id="eYh-yy-DC4" customClass="DetailedViewController" customModule="NewsReaderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedViewController" id="eYh-yy-DC4" customClass="DetailedViewController" customModule="NewsReaderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lLY-7C-1r2"/>
                         <viewControllerLayoutGuide type="bottom" id="Luz-co-Hkp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WHy-g2-KFv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-is-q6L"/>
@@ -56,6 +56,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tju-8f-Psh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-497.10144927536237" y="171.19565217391306"/>
+        </scene>
+        <!--News Table View Controller-->
+        <scene sceneID="oLh-SX-LSt">
+            <objects>
+                <tableViewController id="3Mh-nb-F8J" customClass="NewsTableViewController" customModule="NewsReaderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RIZ-Zb-7lQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" id="FEE-yG-46A" customClass="NewsTableViewCell" customModule="NewsReaderApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FEE-yG-46A" id="nwT-Of-LaZ">
+                                    <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8a0-1h-hZX">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="111" id="QSp-d6-zuE"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="Qpb-8Y-cLo"/>
+                                                <constraint firstAttribute="height" constant="43" id="lW6-YP-ZUk"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyT-nj-5DP">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fyT-nj-5DP" firstAttribute="leading" secondItem="8a0-1h-hZX" secondAttribute="trailing" constant="8" id="490-Ga-bvE"/>
+                                        <constraint firstItem="fyT-nj-5DP" firstAttribute="height" secondItem="8a0-1h-hZX" secondAttribute="height" id="7xe-5k-iBv"/>
+                                        <constraint firstItem="8a0-1h-hZX" firstAttribute="centerY" secondItem="fyT-nj-5DP" secondAttribute="centerY" constant="-8" id="C88-Az-A6d"/>
+                                        <constraint firstItem="8a0-1h-hZX" firstAttribute="leading" secondItem="nwT-Of-LaZ" secondAttribute="leading" constant="8" id="D6V-8X-3gT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fyT-nj-5DP" secondAttribute="trailing" id="PJn-xD-brS"/>
+                                        <constraint firstAttribute="topMargin" secondItem="fyT-nj-5DP" secondAttribute="top" id="duj-z4-FGd"/>
+                                        <constraint firstItem="8a0-1h-hZX" firstAttribute="height" secondItem="nwT-Of-LaZ" secondAttribute="height" id="hit-py-MGq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageCellView" destination="8a0-1h-hZX" id="Gg6-9w-BmE"/>
+                                    <outlet property="titleCellLabel" destination="fyT-nj-5DP" id="dIF-Qg-ebR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3Mh-nb-F8J" id="aXG-Pd-gfZ"/>
+                            <outlet property="delegate" destination="3Mh-nb-F8J" id="5nz-Fs-V5T"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0X-Bm-sFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.39999999999998" y="170.46476761619192"/>
         </scene>
     </scenes>
 </document>

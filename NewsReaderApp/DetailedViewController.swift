@@ -9,18 +9,18 @@
 import UIKit
 
 class DetailedViewController: UIViewController {
-
+    
+    var news: NewsObject!
     @IBOutlet var titlelabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        imageView.image = UIImage(named: "ocean")
-        titlelabel.text = "Big Sur"
+
+        initNews(news: news)
         titlelabel.font = UIFont(name: "Helvetica-Bold", size: 20)
-        descriptionTextView.text = "Big Sur, described as the greatest meeting of land and water in the world, is an undeveloped, lightly populated, unincorporated region on California's Central Coast where the Santa Lucia Mountains rise abruptly from the Pacific Ocean. The coast is frequently praised for its rugged coastline and mountain views. As the longest and most scenic stretch of undeveloped coastline in the continental United States, it has been described as a national treasure that demands extraordinary procedures to protect it from development, and one of the most beautiful coastlines anywhere in the world, an isolated stretch of road, mythic in reputation. Big Sur's Cone Peak at 5,155 feet (1,571 m) is only 3 miles (5 km) from the ocean.[5] The stunning views make Big Sur a popular tourist destination."
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +29,7 @@ class DetailedViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        descriptionTextView.setContentOffset(CGPoint.zero, animated: false)
+        descriptionTextView.setContentOffset(CGPoint.zero, animated: false) //set the uitextview content to start from the top
     }
 
 
@@ -42,5 +42,12 @@ class DetailedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: - Private
+    private func initNews(news: NewsObject!) {
+        self.titlelabel.text = news.title
+        self.imageView.image = news.image
+        self.descriptionTextView.text = news.description
+    }
 
 }
