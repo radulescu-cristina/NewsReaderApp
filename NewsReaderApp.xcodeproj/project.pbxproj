@@ -13,6 +13,8 @@
 		444D42D01E32230000297C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444D42CF1E32230000297C99 /* Assets.xcassets */; };
 		444D42D31E32230000297C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D42D11E32230000297C99 /* LaunchScreen.storyboard */; };
 		444D42DE1E32230000297C99 /* NewsReaderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42DD1E32230000297C99 /* NewsReaderAppTests.swift */; };
+		444D42E91E32271600297C99 /* NewsReader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D42E81E32271600297C99 /* NewsReader.storyboard */; };
+		444D42ED1E3234D800297C99 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42EC1E3234D800297C99 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		444D42D91E32230000297C99 /* NewsReaderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		444D42DD1E32230000297C99 /* NewsReaderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderAppTests.swift; sourceTree = "<group>"; };
 		444D42DF1E32230000297C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444D42E81E32271600297C99 /* NewsReader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsReader.storyboard; sourceTree = "<group>"; };
+		444D42EC1E3234D800297C99 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			children = (
 				444D42C81E3222FF00297C99 /* AppDelegate.swift */,
 				444D42CA1E3222FF00297C99 /* ViewController.swift */,
+				444D42EC1E3234D800297C99 /* DetailedViewController.swift */,
 				444D42CC1E3222FF00297C99 /* Main.storyboard */,
+				444D42E81E32271600297C99 /* NewsReader.storyboard */,
 				444D42CF1E32230000297C99 /* Assets.xcassets */,
 				444D42D11E32230000297C99 /* LaunchScreen.storyboard */,
 				444D42D41E32230000297C99 /* Info.plist */,
@@ -181,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444D42E91E32271600297C99 /* NewsReader.storyboard in Resources */,
 				444D42D31E32230000297C99 /* LaunchScreen.storyboard in Resources */,
 				444D42D01E32230000297C99 /* Assets.xcassets in Resources */,
 				444D42CE1E3222FF00297C99 /* Main.storyboard in Resources */,
@@ -203,6 +210,7 @@
 			files = (
 				444D42CB1E3222FF00297C99 /* ViewController.swift in Sources */,
 				444D42C91E3222FF00297C99 /* AppDelegate.swift in Sources */,
+				444D42ED1E3234D800297C99 /* DetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
