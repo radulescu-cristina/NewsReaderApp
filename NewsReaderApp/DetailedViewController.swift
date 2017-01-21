@@ -43,11 +43,12 @@ class DetailedViewController: UIViewController {
     }
     */
     
-    //MARK: - Private
+    // MARK: - Private
+    
     private func initNews(news: NewsObject!) {
-        self.titlelabel.text = news.title
-        self.imageView.image = news.image
-        self.descriptionTextView.text = news.description
+        self.titlelabel.text = "title" // news.title
+        self.imageView.image = UIImage(named: "ocean")//news.image
+        self.descriptionTextView.text = " safsdg" //news.description
     }
 
 }

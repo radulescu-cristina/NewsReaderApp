@@ -60,7 +60,7 @@
         <!--News Table View Controller-->
         <scene sceneID="oLh-SX-LSt">
             <objects>
-                <tableViewController id="3Mh-nb-F8J" customClass="NewsTableViewController" customModule="NewsReaderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewsTableViewController" id="3Mh-nb-F8J" customClass="NewsTableViewController" customModule="NewsReaderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RIZ-Zb-7lQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
