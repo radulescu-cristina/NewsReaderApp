@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var uiView: UIView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
         let storyboard = UIStoryboard(name: "NewsReader", bundle: nil)
         //Present DetailedViewController
-        //self.presentDetailedViewController(storyboard: storyboard)
+        self.presentDetailedViewController(storyboard: storyboard)
         
         //Present NewsTableViewController
-        self.presentNewsTableViewController(storyboard: storyboard)
+        //self.presentNewsTableViewController(storyboard: storyboard)
     }
     
     
