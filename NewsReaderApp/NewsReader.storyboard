@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,35 +19,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-is-q6L"/>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5re-9n-MJd">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd9-E7-IGl">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipO-nY-dqH">
+                                <frame key="frameInset" minX="4" minY="8" width="410" height="720"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-is-q6L">
+                                        <rect key="frame" x="-4" y="8" width="414" height="360"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5re-9n-MJd">
+                                        <rect key="frame" x="18" y="464" width="374" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd9-E7-IGl">
+                                        <rect key="frame" x="18" y="404" width="374" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="5re-9n-MJd" secondAttribute="leading" id="1eu-x2-G4b"/>
-                            <constraint firstItem="5re-9n-MJd" firstAttribute="top" secondItem="Nd9-E7-IGl" secondAttribute="bottom" multiplier="1.1" constant="1" id="6yq-4P-uqf"/>
-                            <constraint firstAttribute="bottom" secondItem="5re-9n-MJd" secondAttribute="bottom" constant="20" symbolic="YES" id="E0I-ps-KV9"/>
-                            <constraint firstItem="Luz-co-Hkp" firstAttribute="top" secondItem="YMZ-is-q6L" secondAttribute="bottom" multiplier="16:9" constant="1" id="Gug-En-8q0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5re-9n-MJd" secondAttribute="trailing" id="RJN-ap-zif"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nd9-E7-IGl" secondAttribute="trailing" id="Wl3-2a-6sL"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Nd9-E7-IGl" secondAttribute="leading" id="aYI-cW-z1J"/>
-                            <constraint firstItem="Nd9-E7-IGl" firstAttribute="top" secondItem="YMZ-is-q6L" secondAttribute="bottom" multiplier="1.1" constant="1" id="dRa-H9-VO0"/>
-                            <constraint firstItem="YMZ-is-q6L" firstAttribute="leading" secondItem="WHy-g2-KFv" secondAttribute="leading" id="e8W-VT-rtp"/>
-                            <constraint firstItem="YMZ-is-q6L" firstAttribute="top" secondItem="lLY-7C-1r2" secondAttribute="bottom" constant="8" symbolic="YES" id="kyw-MC-8sW"/>
-                            <constraint firstItem="YMZ-is-q6L" firstAttribute="width" secondItem="WHy-g2-KFv" secondAttribute="width" id="wb6-wA-ixk"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionTextView" destination="5re-9n-MJd" id="YwO-rD-al3"/>
+                        <outlet property="detailedScrollView" destination="ipO-nY-dqH" id="SNH-il-XUv"/>
                         <outlet property="imageView" destination="YMZ-is-q6L" id="fho-9H-mbD"/>
                         <outlet property="titlelabel" destination="Nd9-E7-IGl" id="W8s-42-6rL"/>
                     </connections>
@@ -70,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FEE-yG-46A" id="nwT-Of-LaZ">
-                                    <frame key="frameInset" width="414" height="43.666666666666664"/>
+                                    <frame key="frameInset" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8a0-1h-hZX">

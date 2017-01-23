@@ -12,6 +12,7 @@ class DetailedViewController: UIViewController {
     
     var news: NewsObject!
     @IBOutlet var titlelabel: UILabel!
+    @IBOutlet var detailedScrollView: UIScrollView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
     
@@ -20,8 +21,10 @@ class DetailedViewController: UIViewController {
 
         initNews(news: news)
         titlelabel.font = UIFont(name: "Helvetica-Bold", size: 20)
-
+        detailedScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+200);
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,9 +49,9 @@ class DetailedViewController: UIViewController {
     // MARK: - Private
     
     private func initNews(news: NewsObject!) {
-        self.titlelabel.text = "title" // news.title
-        self.imageView.image = UIImage(named: "ocean")//news.image
-        self.descriptionTextView.text = " safsdg" //news.description
+        self.titlelabel.text = news.title
+        self.imageView.image = news.image
+        self.descriptionTextView.text = news.description
     }
 
 }
