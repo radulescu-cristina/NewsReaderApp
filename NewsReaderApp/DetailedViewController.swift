@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailedViewController: UIViewController {
+class DetailedViewController: UIViewController, UITextViewDelegate{
     
     var news: NewsObject!
     @IBOutlet var titlelabel: UILabel!
@@ -19,9 +19,12 @@ class DetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         initNews(news: news)
+        self.textViewDidChange(descriptionTextView)
+        self.descriptionTextView.delegate = self
         titlelabel.font = UIFont(name: "Helvetica-Bold", size: 20)
-        detailedScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+200);
+        detailedScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+100);
     }
     
     
@@ -45,6 +48,26 @@ class DetailedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        let fixedWidth = textView.frame.size.width
+        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        var newFrame = textView.frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        textView.frame = newFrame;
+        
+        return true;
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let fixedWidth = textView.frame.size.width
+        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        var newFrame = textView.frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        textView.frame = newFrame;
+    }
     
     // MARK: - Private
     
