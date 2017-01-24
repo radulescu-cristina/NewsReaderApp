@@ -24,7 +24,7 @@ class DetailedViewController: UIViewController, UITextViewDelegate{
         self.textViewDidChange(descriptionTextView)
         self.descriptionTextView.delegate = self
         titlelabel.font = UIFont(name: "Helvetica-Bold", size: 20)
-        detailedScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+100);
+        detailedScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height+200);
     }
     
     

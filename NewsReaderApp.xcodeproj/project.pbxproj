@@ -18,6 +18,7 @@
 		444D42EF1E32505900297C99 /* FeaturedNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42EE1E32505900297C99 /* FeaturedNewsTableViewCell.swift */; };
 		444D42F11E32518800297C99 /* NewsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42F01E32518800297C99 /* NewsObject.swift */; };
 		444D42F31E325FFB00297C99 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D42F21E325FFB00297C99 /* NewsTableViewController.swift */; };
+		447437FE1E3758A80090DEFE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447437FD1E3758A80090DEFE /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		444D42EE1E32505900297C99 /* FeaturedNewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedNewsTableViewCell.swift; sourceTree = "<group>"; };
 		444D42F01E32518800297C99 /* NewsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsObject.swift; sourceTree = "<group>"; };
 		444D42F21E325FFB00297C99 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		447437FD1E3758A80090DEFE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				444D42EC1E3234D800297C99 /* DetailedViewController.swift */,
 				444D42CC1E3222FF00297C99 /* Main.storyboard */,
 				444D42E81E32271600297C99 /* NewsReader.storyboard */,
+				447437FD1E3758A80090DEFE /* NewsTableViewCell.swift */,
 				444D42F21E325FFB00297C99 /* NewsTableViewController.swift */,
 				444D42EE1E32505900297C99 /* FeaturedNewsTableViewCell.swift */,
 				444D42F01E32518800297C99 /* NewsObject.swift */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				444D42CB1E3222FF00297C99 /* ViewController.swift in Sources */,
+				447437FE1E3758A80090DEFE /* NewsTableViewCell.swift in Sources */,
 				444D42C91E3222FF00297C99 /* AppDelegate.swift in Sources */,
 				444D42F31E325FFB00297C99 /* NewsTableViewController.swift in Sources */,
 				444D42EF1E32505900297C99 /* FeaturedNewsTableViewCell.swift in Sources */,

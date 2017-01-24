@@ -1,17 +1,17 @@
 //
-//  FeaturedNewsTableViewCell.swift
+//  NewsTableViewCell.swift
 //  NewsReaderApp
 //
-//  Created by Cristina Radulescu on 1/20/17.
+//  Created by Cristina Radulescu on 1/24/17.
 //  Copyright © 2017 Cristina Radulescu. All rights reserved.
 //
 
 import UIKit
 
-class FeaturedNewsTableViewCell: UITableViewCell {
+class NewsTableViewCell: UITableViewCell {
 
-    @IBOutlet var imageCellView: UIImageView!
     @IBOutlet var titleCellLabel: UILabel!
+    @IBOutlet var imageCellView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

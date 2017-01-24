@@ -15,14 +15,31 @@ class NewsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var title = "1"
+        var title = "A beautiful picture of Big Sur"
         var image = UIImage(named: "ocean")
         var description = ""
         self.news.insert(NewsObject(title: title, image: image, description: description), at: 0)
         
-        title = "2"
+        title = "How to prepare a relaxing bath"
         image = UIImage(named: "ocean")
         description = "bla bla bla bal bla"
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
+        self.news.append(NewsObject(title: title, image: image, description: description))
         self.news.append(NewsObject(title: title, image: image, description: description))
 
         // Uncomment the following line to preserve selection between presentations
@@ -51,23 +68,31 @@ class NewsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
-
-        // Configure the cell...
         let newsEntry = news[indexPath.row]
-        cell.imageCellView.image = newsEntry.image
-        cell.titleCellLabel.text = newsEntry.title
-
-        return cell
+        
+        if(indexPath.row == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "featuredNewsCell", for: indexPath) as! FeaturedNewsTableViewCell
+            cell.imageCellView.image = newsEntry.image
+            cell.titleCellLabel.text = newsEntry.title
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
+            cell.imageCellView.image = newsEntry.image
+            cell.titleCellLabel.text = newsEntry.title
+            return cell
+        }
+        
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 200
+            return 600
         } else {
-            return 50
+            return 80
         }
     }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

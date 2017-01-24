@@ -16,10 +16,10 @@ class ViewController: UIViewController {
 
         let storyboard = UIStoryboard(name: "NewsReader", bundle: nil)
         //Present DetailedViewController
-        self.presentDetailedViewController(storyboard: storyboard)
+        //self.presentDetailedViewController(storyboard: storyboard)
         
         //Present NewsTableViewController
-        //self.presentNewsTableViewController(storyboard: storyboard)
+        self.presentNewsTableViewController(storyboard: storyboard)
     }
     
     
